@@ -15,7 +15,7 @@ public class DrawArray extends JPanel{
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         this.setBackground(Color.WHITE);
-        width=Math.round(getPreferredSize().width/arr.length);
+        width=(getWidth())/arr.length;
         g.setColor(Color.BLACK);
         for(int i=0;i<arr.length;i++){
             y=Math.round(getHeight()-arr[i]);
